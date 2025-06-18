@@ -1,0 +1,7 @@
+<h1>Lista de Estudiantes</h1>
+<a href="/registrar/">Registrar Nuevo</a>
+<ul>
+    {% for est in estudiantes %}
+        <li>{{ est.nombre }} - {{ est.correo }} - {{ est.curso }}</li>
+    {% endfor %}
+</ul>
