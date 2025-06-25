@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-cdp=pjqb)2yyvpccywqqk4%ej&s4z*gc0&b9vvizva@skng_cs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'escuela.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'defaultdb',
+        'USER': 'avnadmin',
+        'PASSWORD': 'rAVNS_iBkaDmof9-gmD6R66Ji',
+        'HOST': 'escueladb-edilfredo9-fa3d.i.aivencloud.com',
+        'PORT': '25899',
     }
 }
+
 
 
 # Password validation
