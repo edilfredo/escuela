@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'escuela.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'defaultdb',
+        'NAME': 'escueladb',
         'USER': 'avnadmin',
         'PASSWORD': 'rAVNS_iBkaDmof9-gmD6R66Ji',
         'HOST': 'escueladb-edilfredo9-fa3d.i.aivencloud.com',
